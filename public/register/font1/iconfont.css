@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2774169 */
+  src: url('iconfont.woff2?t=1630679769936') format('woff2'),
+       url('iconfont.woff?t=1630679769936') format('woff'),
+       url('iconfont.ttf?t=1630679769936') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.iconfont.icon-direction-left{
+	color: white;
+	font-size:40px;
+}
+.iconfont.icon-direction-left.left1{
+	color: #B0B0B0;
+	font-size: 30px;
+	margin-left: 10px;
+}
+.icon-direction-left:before {
+  content: "\e66d";
+}
+
+.icon-iconset0444:before {
+  content: "\e743";
+}
+
+.icon-iconset0445:before {
+  content: "\e744";
+}
+
+.icon-arrow-up-circle:before {
+  content: "\e665";
+}
+
+.icon-arrow-right-circle:before {
+  content: "\e666";
+}
+
+.icon-ashbin:before {
+  content: "\e667";
+}
+
+.icon-bottom:before {
+  content: "\e668";
+}
+
+.icon-direction-up:before {
+  content: "\e66c";
+}
+
+.icon-fabulous:before {
+  content: "\e66f";
+}
+
+.icon-good:before {
+  content: "\e673";
+}
+
+.icon-navigation:before {
+  content: "\e67a";
+}
+
+.icon-search:before {
+  content: "\e67d";
+}
+
+.icon-zoom-in:before {
+  content: "\e683";
+}
+
+.icon-zoom-out:before {
+  content: "\e684";
+}
+
+.icon-add-bold:before {
+  content: "\e685";
+}
+
+.icon-smile-filling:before {
+  content: "\e68b";
+}
+
+.icon-notification-filling:before {
+  content: "\e68c";
+}
+
+.icon-home-filling:before {
+  content: "\e68d";
+}
+
+.icon-xiaohuojian:before {
+  content: "\e632";
+}
+
+.icon-weixin:before {
+  content: "\e6ea";
+}
+
+.icon-apple-fill:before {
+  content: "\e60e";
+}
+
+.icon-weibo1:before {
+  content: "\e619";
+}
+

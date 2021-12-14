@@ -1,0 +1,23 @@
+{
+  "id": "2778185",
+  "name": "list",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4573173",
+      "name": "T1-border-上升",
+      "font_class": "rise",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "4573174",
+      "name": "T1-border-下降",
+      "font_class": "decline",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    }
+  ]
+}

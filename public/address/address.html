@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/plugins/region/regions_picker_m.css"/>
+		<link rel="stylesheet" type="text/css" href="/assets/fonts/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="/plugins/layer/theme/default/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="/assets/css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="/assets/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="./address.css"/>
+		<title>地址管理</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<a class="uppage"><img src="images/icon_arrow_left_black.png" ></a>
+				<div><span>收货地址</span></div>
+			</div>
+			<div class="wrapper">
+				<div class="content">
+					<!-- 未有地址 -->
+					<div class="nonew-address hiden">
+						<div class="">
+							<img src="images/no_result_address.png" >
+							<p>您还没有收货地址，请点击下方+新建</p>
+						</div>
+					</div>
+					<!-- 有地址 -->
+					<div class="has-address ">
+<!-- 						<div class="new-address">
+							<div>
+								<div class="left">
+									<div class="top"><h3>adddddd</h3><span>1234****567</span></div>
+									<div class="botton"><span>默认地址</span><p>山东省 青岛市 城阳区 城阳街道 金日紫都</p></div>
+								</div>
+								<div class="right">
+									<img src="images/icon_edit_gray.png" >
+								</div>
+							</div>
+						</div>
+						<div class="new-address">
+							<div>
+								<div class="left">
+									<div class="top"><h3>adddddd</h3><span>1234****567</span></div>
+									<div class="botton">山东省 青岛市 城阳区 城阳街道 金日紫都</div>
+								</div>
+								<div class="right">
+									<img src="images/icon_edit_gray.png" >
+								</div>
+							</div>
+						</div>
+		 -->		
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div>
+					<span class="add-address">+ 添加地址</span>
+				</div>
+			</div>
+			<!-- 蒙版 -->
+			<div class="edit-dialog">
+				<div class="wrapper">
+					<div class="edit-header">
+						<a class="dialog-uppage"><img src="images/icon_arrow_left_black.png" ></a>
+						<div><span>编辑地址</span></div>
+					</div>
+					<div class="edit-wrapper">
+						<form action="" class="edit-wrapper-form">
+							<input class="id" type="hidden" value="0">
+							<div>
+								<label for="">收货姓名:</label>
+								<input class="receive-name" type="text" placeholder="请输入收货人姓名..">
+							</div>
+							<div>
+								<label for="">手机号码:</label>
+								<input class="receive-phone" type="text" placeholder="请输入收货电话..">
+							</div>
+							<div>
+								<label for="">收货地区:</label>
+								<input class="regions-picker receive-region " type="text" placeholder="请选择收货城市..">
+							</div>
+							<div>
+								<label for="">详细地址:</label>
+								<input class="receive-detail" type="text" placeholder="请输入收货地址..">
+							</div>
+						</form>
+						<div class="empty"></div>
+						<div class="isdefault-wrapper">
+							<div>
+								<a>设为默认地址</a>
+								<span class="btn-setaddress">点击设为默认地址</span>
+							</div>
+							<div>
+								<span class="btn-remove" style="color: red;">删除收货地址</span>
+							</div>
+						</div>
+					</div>
+					<div class="edit-footer">
+						<div>
+							<span class="btn-save">保存</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		
+		<!-- <ul class="address-list"></ul>
+		<div class="edit-dialog">
+			<form action="">
+				<input class="id" type="hidden" value="0">
+				<input class="receive-name" type="text" placeholder="请输入收货人姓名..">
+				<input class="receive-phone" type="text" placeholder="请输入收货电话..">
+				<input class="regions-picker receive-region " type="text" placeholder="请选择收货城市..">
+				<input class="receive-detail" type="text" placeholder="请输入收货地址..">
+				<button type="button" class="btn-save">保存</button>
+				<button type="button" class="btn-cancel">取消</button>
+			</form>
+		</div>
+		<button class="btn-add">新增</button> -->
+		
+		<script src="/assets/js/jQuery-1.8.2.js"></script>
+		<script src="/assets/js/js-cookie.js"></script>
+		<script src="/plugins/layer/layer.js"></script>
+		<script src="/plugins/region/regions.js"></script>
+		<script src="/plugins/region/regions_picker_m.js"></script>
+		<script src="/plugins/layer/layer.js"></script>
+		<script src="address.js"></script>
+	</body>
+</html>

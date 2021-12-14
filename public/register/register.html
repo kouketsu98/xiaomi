@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/reset.css"/>
+		<link rel="stylesheet" href="/assets/css/public.css">
+		<link rel="stylesheet" type="text/css" href="/plugins/validform/Validform_v5.3.2.css"/>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="layui/css/modules/layer/default/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="./font1/iconfont.css"/>
+		<link rel="stylesheet" href="/plugins/layui/css/layui.css"/>
+
+		<link rel="stylesheet" type="text/css" href="register.css"/>
+		<title>注册</title>
+	</head>
+	<body>
+		<div class="header"><div class="back"><i class="iconfont icon-direction-left left1"></i></div>
+		<div><img src="images/2.png" ></div></div>
+		<div class="header-1">
+			<div>注册小米账号</div>
+			<div>系统会根据您选择的国家/地区的法律法规存储您的个人信息</div>
+		</div>
+		<form action="" class="register-form">
+		<ul class="layui-nav na" lay-filter="">
+				 <li  class="layui-nav-item">
+		    <a style="font-size:3.733333vw ;" href="javascript:;">选择国家</a><dl class="layui-nav-child"> <!-- 二级菜单 -->
+		    <dd><a href="">中国</a></dd>
+		    <dd><a href="">阿富汗</a></dd>
+		    <dd><a href="">澳大利亚</a></dd>
+		  </dl></li>
+		</ul>
+		<div class="form-item-group phone6"><ul class="layui-nav" lay-filter="">
+				 <li  class="layui-nav-item">
+		    <a style="font-size:3.733333vw ;" href="javascript:;">+86</a><dl class="layui-nav-child"> <!-- 二级菜单 -->
+		    <dd><a href="">中国 +86</a></dd>
+		    <dd><a href="">阿富汗 +93</a></dd>
+		    <dd><a href="">澳大利亚 +61</a></dd>
+		  </dl></li>
+		</ul>
+		<input class="phone" type="text" nullmsg="电话号码不能为空" placeholder="输入手机号码"></div>
+		<div class="form-item-group user-name"><span class="username">用户名</span><input class="name" type="text" id="" nullmsg="用户名不能为空" value="" placeholder="请输入用户名"/></div>
+		<div class="form-item-group mima"><span class="userpwd"></span>密码<input class="pwd" type="password" nullmsg="密码不能为空" name="" placeholder="请输入密码" /><div>
+		</form>
+		<!-- <div class="yanzheng"><input type="text" placeholder="请输入短信的验证码"><button type="button">获取验证码</button></div> -->
+		<div class="next"><button class="next1" type="button">注册</button></div>
+		<div class="yanzhengma"><span >收不到验证码？</span></div>
+		<div class="agree"><span class="checkbox"></span><span class="yuedu">已阅读并同意小米账号<p>用户协议</p>和<p>隐私政策</p></span></div>
+		<div class="content"></div>
+	</body>
+	<script src="/assets/js/jQuery-1.8.2.js"></script>
+	<script src="/plugins/validform/Validform_v5.3.2.js"></script>
+	
+	<script src="/assets/js/js-cookie.js"></script>
+	<script src="/plugins/layer/layer.js"></script>
+	<script src="layui/layui.js"></script>
+	<script src="register.js"></script>
+</html>

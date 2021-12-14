@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/assets/css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="/assets/font_asc/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="./list.css"/>
+		<script>window.PointerEvent = undefined;</script>
+		<title>列表页</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="nav">
+					<a href="../category/category.html"></a>
+					<span class="nav-name" ></span>
+					<span class="btn-search"></span>
+				</div>
+				<div class="banner">
+					<ul class="banner-ul">
+						<!--<li>
+						 	<a href="">
+						 		<img src="${item.avatar}" >
+						 		<span>${item.name}</span>
+						 	</a>
+						 </li>-->
+					</ul>
+				</div>
+				<ul class="order-wrapper">
+					<li data-col="price" class="active asc">价格<i class="iconfont icon-rise"> </i></li>
+					<li data-col="sale" class="asc">好评<i class="iconfont icon-rise"> </i></li>
+					<li data-col="rate" class="asc">销量<i class="iconfont icon-rise "> </i></li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="scroll-wrapper">
+					<ul class="list"></ul>
+					<p class="tip"></p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- js -->
+		<script src="/assets/js/jQuery-1.8.2.js"></script>
+		<script src="/assets/js/jquery.query.js"></script>
+		<script src="/plugins/layer/layer.js"></script>
+		<script src="/assets/js/iscroll-probe.js"></script>
+		<script src="/assets/js/imagesloaded.js"></script>
+		<!-- <script src="/assets/font_asc/iconfont.js"></script> -->
+		<script src="./list.js"></script>
+	</body>
+</html>

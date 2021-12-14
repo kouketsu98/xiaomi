@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/plugins/region/regions_picker_m.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/public.css" />
+		<link rel="stylesheet" type="text/css" href="/plugins/layer/theme/default/layer.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/fontaddress/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="./order_confirm.css" />
+		<title>订单确认</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<div class="wrapper">
+					<div class="bg">
+						<img src="images/bg_page_header.png">
+					</div>
+					<div class="content-header">
+						<div class="uppage">&lt;</div>
+						<div class="cart-header-bt"><span>确认订单</span></div>
+					</div>
+					<div class="address-info">
+						<div class="address-info-left">
+							<div class="name-phone">
+								<h4 class="xm"></h4>
+								<span class="ph"></span>
+							</div>
+							<div class="regions-phone">
+								<p class="address-ph"></p>
+							</div>
+						</div>
+						<div class="address-info-right">
+							&gt;
+							
+						</div>
+					</div>
+					<div class="shop-wrapper">
+						<div class="shop-info">
+							<div class="shop-info-header">
+								<img src="images/logo_ypjingxuan.png">
+								<h4>有品精选</h4>
+							</div>
+							<div class="shop-info-content-wrapper">
+								<!-- 此处为从购物车选择的商品进行渲染 -->
+								<!-- <div class="shop-info-content">
+									<div class="shop-info-content-img"><img
+											src="images/515ee0811867242b9f4d620bbcd20c6e.png"></div>
+									<div class="shop-info-content-left">
+										<div><span class="tejia">特价</span>
+											<p class="shop-name">羊舍浮生杯 压手杯</p>
+										</div>
+										<div class="shop-info-content-left-between"><span
+												class="shop-price">￥75.00</span><span class="shop-count"
+												style="color: rgb(0,0,0);">x2</span></div>
+										<div><span class="seven">7天无理由退货(使用后不支持)</span></div>
+									</div>
+								</div> -->
+								
+							</div>
+							
+							
+							<div class="shop-info-type">
+								<div><span>发票类型</span><span>不开发票</span></div>
+								<div><span>售后免邮</span><span>商家赠送</span></div>
+								<div><span>配送方式</span><span>快递配送</span></div>
+								<div><span>买家留言</span><input type="text" placeholder="填写内容需与商家协商并确认，45字以内" value="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="price-wrapper">
+						<div class="price-info">
+							<div>
+								<span>商品总价</span>
+								<span class="price-total"></span>
+							</div>
+							<div><span>运费</span><span>￥0.00</span></div>
+							<div><span>活动优惠</span><span>￥0.00</span></div>
+							<div><span>优惠券</span><span>暂无可用</span></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer-wrapper">
+					<div class="footer-wrapper-left">
+						<span>合计:</span>
+						<span>
+							<span class="jinqian-icon"></span>
+							<span class="price-total"></span>
+						</span>
+					</div>
+					<div class="footer-wrapper-right">
+						<a class="btn-submit">提交订单</a>
+					</div>
+				</div>
+			</div>
+		
+			
+		
+		
+			<!-- 地址选择蒙版 -->
+			<div class="address-dialog hiden">
+				<div class="dialog-content">
+					<!-- <div class="dialog-top"> -->
+						<div class="dialog-content-top">
+							<div class="">
+								<span >选择地址</span>
+							</div>
+							<img class="btn-cancel" src="images/icon_close_circle_gray2.png">
+						</div>
+					<!-- </div> -->
+					<!-- <div class="dialog2-content"> -->
+						<div class="dialog-address-wrapper">
+							<!-- 此处为用户数据库中的所有地址信息 -->
+							<!-- <div class="dialog-address-info">
+								<div class="dialog-address-checkbox"></div>
+								<div class="dialog-info">
+									<div class="dialog-info-namephone">
+										<div class="dialog-info-name">
+											<span class="dialog-info-name-name">zhangsan</span>
+											<span class="dialog-info-name-moren">默认</span>
+										</div>
+										<div class="dialog-info-phone">133*8888</div>
+									</div>
+									<div class="dialog-info-address">山东省 青岛市 城阳区 城阳街道 金日紫都</div>
+								</div>
+								<div class="dialog-update"><img src="images/edit.png"></div>
+							</div> -->
+							
+						</div>
+					<!-- </div> -->
+					<!-- <div class="dialog-botton"> -->
+						<div class="dialog-content-footer">
+							<div class="dialog-content-footer-wrapper">
+								<span><img  src="./images/add.png">添加地址</span>
+							</div>
+						</div>
+					<!-- </div> -->
+					
+				</div>
+			</div>
+		
+			<!-- 编辑地址蒙版 -->
+			<div class="edit-dialog">
+				<div class="wrapper">
+					<div class="edit-header">
+						<a class="dialog-uppage"><img src="/address/images/icon_arrow_left_black.png" ></a>
+						<div><span>编辑地址</span></div>
+					</div>
+					<div class="edit-wrapper">
+						<form action="" class="edit-wrapper-form">
+							<input class="id" type="hidden" value="0">
+							<div>
+								<label for="">收货姓名:</label>
+								<input class="receive-name" type="text" placeholder="请输入收货人姓名..">
+							</div>
+							<div>
+								<label for="">手机号码:</label>
+								<input class="receive-phone" type="text" placeholder="请输入收货电话..">
+							</div>
+							<div>
+								<label for="">收货地区:</label>
+								<input class="regions-picker receive-region " type="text" placeholder="请选择收货城市..">
+							</div>
+							<div>
+								<label for="">详细地址:</label>
+								<input class="receive-detail" type="text" placeholder="请输入收货地址..">
+							</div>
+						</form>
+						<div class="empty"></div>
+						<div class="isdefault-wrapper">
+							<div>
+								<a>设为默认地址</a>
+								<span class="btn-setaddress">点击设为默认地址</span>
+							</div>
+							<div>
+								<span class="btn-remove" style="color: red;">删除收货地址</span>
+							</div>
+						</div>
+					</div>
+					<div class="edit-footer">
+						<div>
+							<span class="btn-save">保存</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		
+		
+		
+		</div>
+
+		<!-- js -->
+		<script src="/assets/js/jQuery-1.8.2.js"></script>
+		<script src="/assets/js/jquery.query.js"></script>
+		<script src="/assets/js/js-cookie.js"></script>
+		<script src="/plugins/region/regions.js"></script>
+		<script src="/plugins/region/regions_picker_m.js"></script>
+		<script src="/plugins/layer/layer.js"></script>
+		<script src="../assets/fontaddress/iconfont.js"></script>
+		<script src="./order_confirm.js"></script>
+	</body>
+</html>

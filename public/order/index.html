@@ -1,0 +1,49 @@
+// 封装一下()();
+setTimeout(function() {
+	$.ajax({
+		type: "get",
+		headers: {Authorization: Cookies.get("token")},
+		url: "/order/list_unpay",
+		data: {},
+		success: function(res) {
+			res.data.forEach(function(item) {
+				var orderid = item.orderId;
+				console.log(item.orderTime);
+				// 2021-09-05 18:08:49.467
+					var djs = item.orderTime;
+					console.log(djs);
+					var reg = /^(\d{4})-(\d{2})-(\d{2})\s(\d{2}):(\d{2}):(\d{2}).(\d{3})/;
+					
+					var y = reg.exec(djs)[1];
+					var m = reg.exec(djs)[2];
+					var d = reg.exec(djs)[3];
+					var h = reg.exec(djs)[4];
+					var min = reg.exec(djs)[5];
+					var s = reg.exec(djs)[6];
+					var ms = reg.exec(djs)[7];
+					console.log(y, m  , d, h , m, s,ms);
+					var targetDate = new Date(y, m - 1, d, h  , m, s,ms);
+					console.log(targetDate);
+					var timer = null;
+					function countdown() {
+						var diff = targetDate.getTime() + 3600000 - new Date().getTime();
+						if (diff <= 0) {
+							// clearInterval(timer);
+							// timer = null;
+							// return;
+						}
+						console.log(orderid);
+						var hours = parseInt(diff / 1000 / 60 / 60 % 24, 10);
+						var minutes = parseInt(diff / 1000 / 60 % 60, 10);
+						var seconds = parseInt(diff / 1000 % 60, 10);
+						
+						$(`.order-wrapper-content[data-id = ${orderid}]`).find('.deadline>span').text(hours + `:` + minutes + `:` + seconds);
+					}
+					setInterval(countdown, 1000);
+				
+				
+			});
+			
+		},
+	});	
+},0);

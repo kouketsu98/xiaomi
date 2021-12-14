@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" >
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/assets/css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="/plugins/validform/Validform_v5.3.2.css"/>
+		<link rel="stylesheet" type="text/css" href="/plugins/layer/mobile/need/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="./login.css"/>
+		<title>登录</title>
+	</head>
+	<body>
+		<div class="container">
+			<!-- <div class="header"></div> -->
+			<div class="bg">
+				<div class="login-wrapper">
+					<img src="images/logo.svg" >
+					<p>欢迎登录小米有品</p>
+				</div>
+			</div>
+			<div class="content ">
+				<h3>小米账号登录</h3>
+				<form class="login" action="">
+					<div class="form-item-group ">
+						<input class="name" type="text" datatype="s4-20" placeholder="请输入用户名..." nullmsg="请输入用户名" errormsg="用户名4-20长度">
+						<div class="quxiao"></div>
+						<!-- <img src="images/下载.png" > -->
+					</div>
+					<div class="form-item-group">
+						<input class="pwd " type="password" datatype="s3-20" placeholder="请输入密码..." nullmsg="请输入登录密码" errormsg="用户名3-20长度">
+						<div class="xianshi"></div>
+					</div>
+				</form>
+				<div>
+					<button class="btn-login"><span>登录</span></button>
+				</div>
+				<div class="other-toggle">
+					<a class="gopage2">手机号登录</a>
+					<div> | </div>
+					<a href="/register/register.html">立即注册</a>
+					<div> | </div>
+					<a >忘记密码？</a>
+				</div>
+			</div>
+			<div class="content-phone show">
+				<h3>小米账号登录</h3>
+				<form class="login-phone" action="">
+					<div class="form-item2-group ">
+						<input class="phone" type="text" datatype="s11" placeholder="请输入手机号..." nullmsg="请输入手机号" errormsg="手机号11位" >
+						<div class="quxiao"></div>
+						<!-- <img src="images/下载.png" > -->
+					</div>
+				</form>
+				<div>
+					<button class="btn-phone">下一步</button>
+				</div>
+				<div class="other-toggle">
+					<a class="gopage1">用户名密码登录</a>
+					<div> | </div>
+					<a >立即注册</a>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="others-login">
+					<span>其他方式验证</span>
+					<div class="">
+						<a class="nodev"><span style="background-color: #18acfc;">Q</span></a>
+						<a class="nodev"><span style="background-color: #ea5d5c;">博</span></a>
+						<a class="nodev"><span style="background-color: #1989fa;">支</span></a>
+						<a class="nodev"><span style="background-color: #50b674;">微</span></a>
+						<a class="nodev"><span style="background-color: #33353b;">苹</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- js -->
+		<script src="/assets/js/jQuery-1.8.2.js"></script>
+		<script src="/assets/js/js-cookie.js"></script>
+		<script src="/plugins/validform/Validform_v5.3.2.js"></script>
+		<script src="/plugins/layer/layer.js"></script>
+		<script src="./login.js"></script>
+	</body>
+</html>

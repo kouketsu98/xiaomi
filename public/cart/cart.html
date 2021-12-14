@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/assets/css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="/plugins/layer/theme/default/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="./cart.css"/>
+		<title>购物车</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="cart-header">
+				<div><img src="images/header-iocn.png" ></div>
+				<div class="cart-header-bt"><span>购物车</span></div>
+			</div>
+			<div class="content-wrapper">
+				<div class=" content">
+					<div class="bg">
+						<img src="images/bg_page_header.png" >
+					</div>
+					<div class="banner">
+						<div class="fanhui"><img src="./images/icon_arrow_left_white2.png" ></div>
+						<div class="biaoti"><span>购物车</span></div>
+						<div class="toggle"> 
+							<span class="bianji hide">编辑</span> 
+							<!-- <span class="bianji hide">完成</span> -->
+						</div>
+					</div>
+					<!-- 未登录之前状态 -->
+					<div class="islogin">
+						<img src="images/no_result_cart2.png" >
+						<p>登录后才能看到商品哦~</p>
+						<span class="btn-nowgologin">立即登录</span>
+					</div>
+					<!-- 已经登录但还没有商品状态 -->
+					<div class="isshopping">
+						<img src="images/no_result_cart2.png" >
+						<p>还没有商品哦~</p>
+						<span class="btn-nowgoindex">去首页</span>
+					</div>
+					<!-- 登录之后状态 -->
+					<div class="cartinfo-wrapper">
+						<div class="cartinfo-hd">
+							<div class="hd-allcheck">
+								<span class="checkbox all "></span> <span> 有品精选</span>
+							</div>
+							<div class="myf">
+								<img src="images/icon_tip_black.png" > 已免运费
+							</div>
+						</div>
+						<div class="cartinfo-bd">
+<!-- 						<div>
+								<div>
+									<span class="checkbox"></span>
+								</div>
+								<div >
+									<img src="images/test.png" >
+									<div>
+										<div>
+											<img src="images/4babede2912b259d01b2a72ffa3d8eff.png" >
+											<h4>小浪TDS即热上水器 提桶器</h4>
+										</div>
+										<div>
+											提桶器
+										</div>
+										<div>
+											<span>￥9.00</span>
+											<div>
+												<input class="btn-decrease" } value='-' type="button" />
+												<span>8</span>
+												
+												<input class="btn-increase" } value='+' type="button" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+	 -->					
+						</div>
+					</div>
+					<!-- 为你推荐 -->
+					<div class="rec">
+						<div class="rec-hd">
+							<img src="images/recheader_left.png" >
+							<span>为你推荐</span>
+							<img src="images/recheader_right.png" >
+						</div>
+						<div class="rec-bd">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="border-1px footer">
+				<div class="ft-all">
+					<div class="ft-left">
+							<div>
+								<span class="checkbox all "></span>
+								<span class="allwenzi">全选</span>
+							</div>
+							<div class="other ">
+								<div >
+									<span class="heji" style="color: #000000;">合计:</span>￥<span class="total">0</span>.00
+								</div>
+								<div>
+									<span class="youhui">活动优惠￥0.00</span>
+								</div>
+							</div>
+						</div>
+						<div class="ft-right">
+							<a class="isremove">
+								<span class="gotopay" >结算<span class="shuliang"></span></span>
+								<span class="btn-remove hide">删除</span>
+							</a>
+						</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	
+		<!-- js -->
+		<script src="/assets/js/jQuery-1.8.2.js"></script>
+		<script src="/assets/js/js-cookie.js"></script>
+		<script src="/plugins/layer/layer.js"></script>
+		<script src="./cart.js"></script>
+	</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/public.css" />
+		<link rel="stylesheet" type="text/css" href="/plugins/swiper/swiper-bundle.css" />
+		<link rel="stylesheet" type="text/css" href="/plugins/layer/theme/default/layer.css" />
+		
+		<link rel="stylesheet" type="text/css" href="./detail.css" />
+		<script>window.PointerEvent = undefined;</script>
+		<!-- <script>
+			window.PointerEvent = undefined;
+		</script> -->
+		<title>商品详情页</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content-wrapper">
+				<div class="wrapper">
+					<div class="content">
+						<div class="banner-wrapper part" id="lisp">
+							<div class="swiper-container banner">
+								<div class="swiper-wrapper">
+									<!-- <div class="swiper-slide"><a href=""><img src="" ></a></div>
+									<div class="swiper-slide"><a href=""><img src="" ></a></div>
+									<div class="swiper-slide"><a href=""><img src="" ></a></div>
+									<div class="swiper-slide"><a href=""><img src="" ></a></div>
+									<div class="swiper-slide"><a href=""><img src="" ></a></div> -->
+								</div>
+								<div class="swiper-pagination"></div>
+								<!-- <div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div> -->
+							</div>
+						</div>
+
+						<div class="miaosha">
+							<div class="miaosha-left">
+								<div class="ypms">
+									<span>有品</span>
+									<span>秒杀</span>
+								</div>
+								<div class="">
+									<span style="font-size: 4.8vw; font-weight: bold; color: #FFFDEF;">￥
+									<span class="price"></span></span>
+								</div>
+							</div>
+							<div class="miaosha-right">
+								<span>距结束还剩</span>
+								<div class="djs">
+									<span class="hours">00</span>：
+									<span class="min">00</span>：
+									<span class="miao">00</span>
+								</div>
+							</div>
+						</div>
+						<div class="ismiaosha">
+							<div>
+								<span>有品秒杀</span>
+								<i></i>
+							</div>
+						</div>
+						<div class="name-brief">
+							<div><span class="shop-name"></span><i class="islike nolike "></i></div>
+							<div><p class="shop-brief"></p></div>
+						</div>
+						<div class="empty"></div>
+						<div class="lingquan"></div>
+						<div class="model-address">
+							<div class="yixuan">
+								<div>
+									<p>已选</p><span class="shop-name"></span>
+								</div>
+								<i></i>
+							</div>
+							<div class="songdao">
+								<div>
+									<p>送至</p><span class="huoqu-address"></span>
+								</div>
+								<i></i>
+							</div>
+						</div>
+						<div class="ispar">
+							<div>
+								<span>
+									<i><img src="images/icon_checkbox_check_pale_brown%20(2).png" ></i>满99包邮
+								</span>
+								<span>
+									<i><img src="images/icon_checkbox_check_pale_brown%20(2).png" ></i>三方店铺
+								</span>
+								<span>
+									<i><img src="images/icon_checkbox_check_pale_brown%20(2).png" ></i>7天无理由
+								</span>
+							</div>
+							<div><i></i></div>
+						</div>
+						<div class="empty"></div>
+						<div class="pj part" id="lipj"><img src="images/pj.png" ></div>
+						<div class="empty"></div>
+						<div class="details part" id="lixq">
+							<div class="details-hd">
+								<span class="active">产品详情</span>
+								<span>常见问题</span>
+								<span>安装须知</span>
+							</div>
+							<div class="details-bd"></div>
+						</div>
+						<!-- 为你推荐 -->
+						<div class="rec part " id="litj">
+							<div class="rec-hd">
+								<img src="../profile/images/recheader_left.png" >
+								<span>为你推荐</span>
+								<img src="../cart/images/recheader_right.png" >
+							</div>
+							<div class="rec-bd">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+	
+			<!-- dibu -->
+			<div class="footer">
+				<div class="footer-content">
+					<div class="left">
+						<div>
+							<img src="images/mi_shop_icon.png">
+							<span>小米</span>
+						</div>
+						<div class="alltotal">
+							<img src="images/icon_shop_cart.png">
+							<span>购物车</span>
+							<div class="total-number "></div>
+						</div>
+					</div>
+					<div class="right">
+						<a class="incart" >加入购物车</a>
+						<a class="nowpay" >立即抢购</a>
+					</div>
+				</div>
+			</div>
+				
+		</div>
+		<!-- 购买dialog -->
+		<div class="paydialog hiden">
+			<div class="dialog-content">
+				<div class="dialog-top">
+					<div class="dialog-top-top">
+						<div class="left-img"><img src="images/banner001.jpg" style="width: 26.666667vw;" ></div>
+						<div class="right-content">
+							<div class="spname">
+								<span>￥1599</span>
+								<p>到手价￥1599</p>
+								<i class="btn-quxiao"></i>
+							</div>
+							<span class="manjian"><span>满减</span></span>
+							<span class="pay-count">1件</span>
+						</div>
+					</div>
+					<div class="dialog-top-botton">
+						<span style="font-size: 3.466667vw;">数量</span>
+						<div class="deandin">
+							<input class="btn-decrease" } value='-' type="button" />
+							<input class="shuliang" type="text" value="1" style="font-size: 3.466667vw; width: 6.4vw; height: 6.4vw;">
+							<input class="btn-increase" } value='+' type="button" />
+						</div>
+					</div>
+				</div>
+				<div class="dialog-botton">
+					<span class="btn-sure">
+						<div>
+							确定
+						</div>
+						
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- 地址选择蒙版 -->
+		<div class="address-dialog hiden">
+			<div class="dialog-content">
+				<!-- <div class="dialog-top"> -->
+					<div class="dialog-content-top">
+						<div class="">
+							<span >选择地址</span>
+						</div>
+						<img class="btn-cancel" src="/order_confirm/images/icon_close_circle_gray2.png">
+					</div>
+				<!-- </div> -->
+				<!-- <div class="dialog2-content"> -->
+					<div class="dialog-address-wrapper">
+						<!-- 此处为用户数据库中的所有地址信息 -->
+						<!-- <div class="dialog-address-info">
+							<div class="dialog-address-checkbox"></div>
+							<div class="dialog-info">
+								<div class="dialog-info-namephone">
+									<div class="dialog-info-name">
+										<span class="dialog-info-name-name">zhangsan</span>
+										<span class="dialog-info-name-moren">默认</span>
+									</div>
+									<div class="dialog-info-phone">133*8888</div>
+								</div>
+								<div class="dialog-info-address">山东省 青岛市 城阳区 城阳街道 金日紫都</div>
+							</div>
+							<div class="dialog-update"><img src="images/edit.png"></div>
+						</div> -->
+						
+					</div>
+				<!-- </div> -->
+				<!-- <div class="dialog-botton"> -->
+					<div class="dialog-content-footer">
+						<div class="dialog-content-footer-wrapper">
+							<span><img  src="/order_confirm/images/add.png">选择其他地址</span>
+						</div>
+					</div>
+				<!-- </div> -->
+				
+			</div>
+		</div>
+		<!-- 返回顶部 -->	
+		<div class="back-to-top">
+			<div class="back-top"><img src="images/icon_back_to_top.png" ></div>
+		</div>
+		<!-- 顶部部分 -->
+		<div class="header">
+			<div>
+				<a class="uppage"></a>
+				<!-- 内容关联 -->
+				<ul class="part-indicators">
+					<li class="lisp"><a href="#lisp">商品</a></li>
+					<li class="lipj"><a href="#lipj">评价</a></li>
+					<li class="lixq"><a href="#lixq">详情</a></li>
+					<li class="litj"><a href="#litj">推荐</a></li>
+				</ul>
+				
+				<span></span>
+			</div>
+		</div>
+							
+		<!-- js -->
+		<script src="/assets/js/jQuery-1.8.2.js"></script>
+		<script src="/assets/js/jquery.query.js"></script>
+		<script src="/plugins/swiper/swiper-bundle.js"></script>
+		<script src="/assets/js/js-cookie.js"></script>
+		<script src="/plugins/layer/layer.js"></script>
+		<!-- <script src="/register/register.js"></script> -->
+		<!-- <script src="/plugins/region/regions.js"></script>
+		<script src="/plugins/region/regions_picker_m.js"></script> -->
+		<script src="/assets/js/iscroll-probe.js"></script>
+		<script src="/assets/js/imagesloaded.js"></script>
+
+		<script src="./detail.js"></script>
+	</body>
+</html>

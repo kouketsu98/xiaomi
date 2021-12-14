@@ -1,0 +1,256 @@
+.container { 
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	/* font-size: 0; */
+	background-color: #f4f4f4;
+	overflow: hidden;
+}
+/* 头部开始 */
+.header-wrapper {
+	 display: flex;
+	 flex-shrink: 0;
+	 flex-direction: column;
+}
+.header-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 11.7333333vw;
+	font-size: 4.266667vw;
+}
+.header-title img {
+	 width: 13.333333vw;
+}
+.header-title .search {
+	padding: 2.666667vw;
+	margin-right: 1.866667vw;
+}
+
+/* 菜单 */
+.header-nav {
+	display: flex;
+	flex-direction: row;
+}
+.menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 10.666666vw;
+	flex-grow: 1;
+}
+div.menu div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+div.menu div span {
+	font-size:3.466667vw;
+	
+	color: rgb(102, 102, 102);
+	padding: 0.5vw 2.666666vw;
+	border-radius: 20px;
+}
+div.menu div.active span {
+	background-color: #dfb455;
+	color: white;
+}
+/* 内容 */
+.content-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	overflow: auto;
+}
+.test {
+	/* height: 6666vw; */
+}
+/* 没有订单 */
+.no-order {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 53.066666vw;
+	padding: 10.666666vw 0;
+}
+.no-order img {
+	height: 24vw;
+	width: 24vw;
+}
+.no-order span {
+	margin-top: 3.466666vw;
+	font-size: 3.2vw;
+	color: #666;
+}
+/* 为你推荐 */
+div.recom {
+	display: flex;
+	justify-content: center;
+	margin: 2.666666vw 0;
+}
+div.recom img {
+	height: 4.8vw;
+	width: 4.9vw;
+}
+div.recom span {
+	display: flex;
+	justify-content: center;
+	width: 20.586666vw;
+	height: 5.546666vw;
+	font-size: 4vw;
+}
+/*  */
+.no-order.hiden {
+	display: none;
+}
+.order-wrapper.show {
+	display: block;
+}
+/* 订单 */
+.order-wrapper {
+	margin: 2.666667vw 2.666666vw 2.666666vw 2.666666vw;
+	/* background-color: white; */
+	border-radius: 2.666667vw;
+	display: none;
+	
+}
+.order-wrapper-content {
+	margin: 2.666667vw 0;
+	background-color: #FFFFFF;
+}
+.order-header {
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 2.666666vw;
+	height: 11.7333333vw;
+}
+.order-header img {
+	height: 6.666666vw;
+	width: 6.666666vw;
+	margin-right: 1.866666vw;
+	
+}
+.order-header h6 {
+	flex-grow: 1;
+	font-size: 4vw;
+}
+.order-header span {
+	font-size: 3.666667vw;
+	color: #bf1111;
+}
+div.order-content {}
+div.order {
+	display: flex;
+	height: 30.4vw;
+	padding: 3.2vw 2.666666vw;
+}
+div.order img {
+	height: 100%;
+	background-color: #f8f8f8;
+}
+div.order-right {
+	display: flex;
+	flex-grow: 1;
+	margin-left: 2.666666vw;
+}
+div.name-remark {
+	display: flex;
+	flex-direction: column;
+	width: 42.253333vw;
+}
+h6.product-name {
+	box-sizing: border-box;
+	margin-bottom: 0.533333vw;
+	font-size: 4.2666667vw;
+}
+span.remark {
+	font-size: 13px;
+	color: #999;
+}
+div.price-count {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	font-size: 3.2vw;
+	color: #999;
+}
+div.price-count span {
+	height: 6.4vw;
+	vertical-align: middle;
+}
+div.price-count span:before {
+	content:"";
+	display: inline-block;
+	height: 100%;
+	width: 0;
+	vertical-align: middle;
+}
+span.count {
+	text-align: right;
+}
+.total-price-wrapper {
+	height: 10.826666vw;
+	padding: 2.666666vw;
+	font-size: 3.2vw;
+	text-align: right;
+}
+span.total-price {
+	font-size: 3.666667vw;
+}
+.pay-time {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 2.666666vw;
+	height: 12.8vw;
+}
+.deadline {
+	height: 100%;
+	font-size: 2.666667vw;
+	color: red;
+	vertical-align: middle;
+	/* display: none; */
+}
+.deadline:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	width: 0;
+	vertical-align: middle;
+}
+.deadline.hiden {
+	display: none;
+}
+/* 倒计时结束 */
+.overdur.hiden {
+	display: none;
+}
+.overdur {
+	height: 100%;
+	font-size: 3.733333vw;
+	color: rgb(153, 153, 153);
+	vertical-align: middle;
+}
+.overdur:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	width: 0;
+	vertical-align: middle;
+}
+.go-pay {
+	width: 20.266666vw;
+	height: 7.466666vw;
+	border: 1px solid red;
+	color: red;
+	border-radius: 8vw;
+	background-color: white;
+}
